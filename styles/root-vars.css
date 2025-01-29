@@ -1,0 +1,31 @@
+body.dark-theme {
+    --primary-color: #3B82F6; /* Основной акцентный цвет (синий) */
+    --secondary-color: #8B5CF6; /* Вторичный акцентный цвет (фиолетовый) */
+    --background-color: #1E293B; /* Фон */
+    --text-color: #F8FAFC; /* Основной текст */
+    --text-secondary-color: #94A3B8; /* Вторичный текст */
+    --accent-color: #F59E0B; /* Акцентный цвет (оранжевый) */
+    --border-color: #334155; /* Цвет границ */
+    --hover-color: #1E40AF; /* Цвет при наведении */
+}
+
+body.light-theme {
+    --primary-color: #2563EB; /* Основной акцентный цвет (синий) */
+    --secondary-color: #7C3AED; /* Вторичный акцентный цвет (фиолетовый) */
+    --background-color: #FFFFFF; /* Фон */
+    --text-color: #1E293B; /* Основной текст */
+    --text-secondary-color: #64748B; /* Вторичный текст */
+    --accent-color: #F59E0B; /* Акцентный цвет (оранжевый) */
+    --border-color: #E2E8F0; /* Цвет границ */
+    --hover-color: #DBEAFE; /* Цвет при наведении */
+}
+
+body.dark-theme .gradient-colors {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, #5f5d82 0%, var(--accent-color) 69%);
+}
+
+body.light-theme .gradient-colors {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, #fff2b1 0%, var(--accent-color) 69%);
+}
