@@ -1,66 +1,82 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/index.css" />
-    <link rel="icon" href="./icons/favicon.ico" type="image/x-icon" />
-    <title>CSV</title>
-    <script type="module" defer src="./scripts/index.js"></script>
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/index.css" />
+		<link rel="icon" href="./icons/favicon.ico" type="image/x-icon" />
+		<title>CSV</title>
+	</head>
 
-  <body>
-    <header class="header">
-      <div class="container header_container">
-        <div class="logo header_logo">CSV</div>
+	<body>
+		<header class="header">
+			<div class="container header_container">
+				<div class="logo header_logo">CSV</div>
 
-        <nav class="nav header_nav">
-          <ul class="nav_list">
-            <li class="nav_list-item">
-              <a class="nav_link" href="#section-hero_container" tabindex="1"
-                >Contacts</a
-              >
-            </li>
-            <li class="nav_list-item">
-              <a class="nav_link" href="#section-skills" tabindex="2">Skills</a>
-            </li>
-            <li class="nav_list-item">
-              <a class="nav_link" href="#section-about" tabindex="3"
-                >About me</a
-              >
-            </li>
-          </ul>
-        </nav>
+				<nav class="nav header_nav">
+					<ul class="nav_list">
+						<li class="nav_list-item">
+							<a
+								class="nav_link"
+								href="#section-hero_container"
+								tabindex="1"
+								>Contacts</a
+							>
+						</li>
+						<li class="nav_list-item">
+							<a
+								class="nav_link"
+								href="#section-skills"
+								tabindex="2"
+								>Skills</a
+							>
+						</li>
+						<li class="nav_list-item">
+							<a
+								class="nav_link"
+								href="#section-about"
+								tabindex="3"
+								>About me</a
+							>
+						</li>
+					</ul>
+				</nav>
 
-        <div class="wrapper_theme-toggle">
-          <button id="theme-toggle" class="theme-toggle" tabindex="4">
-            <span class="icon sun-icon">☀️</span>
-            <!-- Иконка солнца -->
-            <span class="icon moon-icon">🌙</span>
-            <!-- Иконка луны -->
-          </button>
-        </div>
-      </div>
-    </header>
+				<div class="wrapper_theme-toggle">
+					<button id="theme-toggle" class="theme-toggle" tabindex="4">
+						<span class="icon sun-icon">☀️</span>
+						<!-- Иконка солнца -->
+						<span class="icon moon-icon">🌙</span>
+						<!-- Иконка луны -->
+					</button>
+				</div>
+			</div>
+		</header>
 
-    <main class="main">
-      <section class="section-hero section-hero__100vh">
-        <div
-          id="section-hero_container"
-          class="container section-hero_container"
-        >
-          <div class="section-hero_sides">
-            <div class="avatar">
-              <img class="avatar_img" src="./imgs/avatar.jpg" alt="avatar" />
-            </div>
-            <div class="contacts">
-              <div class="info">
-                <h1 class="info_heading">
-                  <div class="author-name">Timur</div>
-                  <div class="author-mid-name">gabdrashitov</div>
-                </h1>
-                <div class="info_contact">
-                  <pre class="info_contact-container">
+		<main class="main">
+			<section class="section-hero section-hero__100vh">
+				<div
+					id="section-hero_container"
+					class="container section-hero_container"
+				>
+					<div class="section-hero_sides">
+						<div class="avatar">
+							<img
+								class="avatar_img"
+								src="./imgs/avatar.jpg"
+								alt="avatar"
+							/>
+						</div>
+						<div class="contacts">
+							<div class="info">
+								<h1 class="info_heading">
+									<span class="author-name">Timur</span>
+									<span class="author-mid-name">
+										gabdrashitov
+									</span>
+								</h1>
+								<div class="info_contact">
+									<pre class="info_contact-container">
 
 {
   "city": "Kazan",
@@ -76,362 +92,484 @@
   "other": "Loading..."
 }
   </pre
-                  >
-                </div>
-              </div>
-              <h2 class="section-hero_links-title">Links</h2>
-              <ul class="social-list section-hero_social-list">
-                <li class="social-list_item">
-                  <a
-                    class="social-list_link"
-                    target="_blank"
-                    href="https://vk.com/b0nnerr"
-                    tabindex="5"
-                  >
-                    <svg
-                      class="vk-svg"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="100%"
-                      height="100%"
-                      viewBox="0 0 24 24"
-                      role="img"
-                    >
-                      <title>VK icon</title>
-                      <path
-                        d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.391 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.254-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.744-.576.744z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-list_item">
-                  <a
-                    class="social-list_link"
-                    target="_blank"
-                    href="https://t.me/timmur_kom"
-                    tabindex="6"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="100%"
-                      height="100%"
-                      viewBox="0 0 32 32"
-                      version="1.1"
-                    >
-                      <title>telegram</title>
-                      <path
-                        d="M22.122 10.040c0.006-0 0.014-0 0.022-0 0.209 0 0.403 0.065 0.562 0.177l-0.003-0.002c0.116 0.101 0.194 0.243 0.213 0.403l0 0.003c0.020 0.122 0.031 0.262 0.031 0.405 0 0.065-0.002 0.129-0.007 0.193l0-0.009c-0.225 2.369-1.201 8.114-1.697 10.766-0.21 1.123-0.623 1.499-1.023 1.535-0.869 0.081-1.529-0.574-2.371-1.126-1.318-0.865-2.063-1.403-3.342-2.246-1.479-0.973-0.52-1.51 0.322-2.384 0.221-0.23 4.052-3.715 4.127-4.031 0.004-0.019 0.006-0.040 0.006-0.062 0-0.078-0.029-0.149-0.076-0.203l0 0c-0.052-0.034-0.117-0.053-0.185-0.053-0.045 0-0.088 0.009-0.128 0.024l0.002-0.001q-0.198 0.045-6.316 4.174c-0.445 0.351-1.007 0.573-1.619 0.599l-0.006 0c-0.867-0.105-1.654-0.298-2.401-0.573l0.074 0.024c-0.938-0.306-1.683-0.467-1.619-0.985q0.051-0.404 1.114-0.827 6.548-2.853 8.733-3.761c1.607-0.853 3.47-1.555 5.429-2.010l0.157-0.031zM15.93 1.025c-8.302 0.020-15.025 6.755-15.025 15.060 0 8.317 6.742 15.060 15.060 15.060s15.060-6.742 15.060-15.060c0-8.305-6.723-15.040-15.023-15.060h-0.002q-0.035-0-0.070 0z"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <li class="social-list_item">
-                  <a
-                    class="social-list_link"
-                    target="_blank"
-                    href="https://www.instagram.com/timmur.kom"
-                    tabindex="7"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      width="100%"
-                      height="100%"
-                      version="1.1"
-                      viewBox="0 0 48 48"
-                      xml:space="preserve"
-                    >
-                      <style type="text/css">
-                        .st0 {
-                          fill: none;
-                        }
-                      </style>
-                      <g>
-                        <path class="st0" d="M0,0h48v48H0V0z" />
-                        <path
-                          d="M36,4H12c-4.4,0-8,3.6-8,8v24c0,4.4,3.6,8,8,8h24c4.4,0,8-3.6,8-8V12C44,7.6,40.4,4,36,4z M24,34c-5.5,0-10-4.5-10-10   s4.5-10,10-10s10,4.5,10,10S29.5,34,24,34z M35,15c-1.1,0-2-0.9-2-2c0-1.1,0.9-2,2-2s2,0.9,2,2C37,14.1,36.1,15,35,15z"
-                        />
-                      </g>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="section-skills" class="section-skills section-skills__100vh">
-        <div class="container">
-          <h2 class="h2-title">Skills</h2>
-          <div class="section-skills__wrapper">
-            <div class="section-skills__left-side">
-              <ul class="section-skills_list">
-                <li class="section-skills_list-item">
-                  <div class="section-skills_img-container">
-                    <img class="skill-svg" src="./icons/js.svg" alt="JS" />
-                  </div>
-                  <div class="section-skills_info" data-skill-percent="90">
-                    <div class="section-skills_progress-title"></div>
-                    <div class="section-skills_progress gradient-colors"></div>
-                  </div>
-                </li>
-                <li class="section-skills_list-item">
-                  <div class="section-skills_img-container">
-                    <img class="skill-svg" src="./icons/html.svg" alt="HTML5" />
-                  </div>
-                  <div class="section-skills_info" data-skill-percent="100">
-                    <div class="section-skills_progress-title"></div>
-                    <div class="section-skills_progress gradient-colors"></div>
-                  </div>
-                </li>
-                <li class="section-skills_list-item">
-                  <div class="section-skills_img-container">
-                    <img class="skill-svg" src="./icons/css.svg" alt="CSS3" />
-                  </div>
-                  <div class="section-skills_info" data-skill-percent="99">
-                    <div class="section-skills_progress-title"></div>
-                    <div class="section-skills_progress gradient-colors"></div>
-                  </div>
-                </li>
-                <li class="section-skills_list-item">
-                  <div class="section-skills_img-container">
-                    <img
-                      class="skill-svg"
-                      src="./icons/nodejs.svg"
-                      alt="Node.js"
-                    />
-                  </div>
-                  <div class="section-skills_info" data-skill-percent="90">
-                    <div class="section-skills_progress-title"></div>
-                    <div class="section-skills_progress gradient-colors"></div>
-                  </div>
-                </li>
-                <li class="section-skills_list-item">
-                  <div class="section-skills_img-container">
-                    <img
-                      class="skill-svg"
-                      src="./icons/expressjs.svg"
-                      alt="Express.js"
-                    />
-                  </div>
-                  <div class="section-skills_info" data-skill-percent="85">
-                    <div class="section-skills_progress-title"></div>
-                    <div class="section-skills_progress gradient-colors"></div>
-                  </div>
-                </li>
-                <li class="section-skills_list-item">
-                  <div class="section-skills_img-container">
-                    <img
-                      class="skill-svg"
-                      src="./icons/postman.svg"
-                      alt="Postman"
-                    />
-                  </div>
-                  <div class="section-skills_info" data-skill-percent="100">
-                    <div class="section-skills_progress-title"></div>
-                    <div class="section-skills_progress gradient-colors"></div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="section-skills__right-side">
-              <ul class="section-skills_list">
-                <li class="section-skills_list-item">
-                  <div class="section-skills_img-container">
-                    <img class="skill-svg" src="./icons/sass.svg" alt="SASS" />
-                  </div>
-                  <div class="section-skills_info" data-skill-percent="80">
-                    <div class="section-skills_progress-title"></div>
-                    <div class="section-skills_progress gradient-colors"></div>
-                  </div>
-                </li>
-                <li class="section-skills_list-item">
-                  <div class="section-skills_img-container">
-                    <img
-                      class="skill-svg"
-                      src="./icons/reactjs.svg"
-                      alt="React.js"
-                    />
-                  </div>
-                  <div class="section-skills_info" data-skill-percent="99">
-                    <div class="section-skills_progress-title"></div>
-                    <div class="section-skills_progress gradient-colors"></div>
-                  </div>
-                </li>
-                <li class="section-skills_list-item">
-                  <div class="section-skills_img-container">
-                    <img
-                      class="skill-svg"
-                      src="./icons/redux.svg"
-                      alt="Redux"
-                    />
-                  </div>
-                  <div class="section-skills_info" data-skill-percent="90">
-                    <div class="section-skills_progress-title"></div>
-                    <div class="section-skills_progress gradient-colors"></div>
-                  </div>
-                </li>
-                <li class="section-skills_list-item">
-                  <div class="section-skills_img-container">
-                    <img class="skill-svg" src="./icons/sql.svg" alt="SQL" />
-                  </div>
-                  <div class="section-skills_info" data-skill-percent="100">
-                    <div class="section-skills_progress-title"></div>
-                    <div class="section-skills_progress gradient-colors"></div>
-                  </div>
-                </li>
-                <li class="section-skills_list-item">
-                  <div class="section-skills_img-container">
-                    <img
-                      class="skill-svg"
-                      src="./icons/mongodb.svg"
-                      alt="MongoDB"
-                    />
-                  </div>
-                  <div class="section-skills_info" data-skill-percent="90">
-                    <div class="section-skills_progress-title"></div>
-                    <div class="section-skills_progress gradient-colors"></div>
-                  </div>
-                </li>
-                <li class="section-skills_list-item">
-                  <div class="section-skills_img-container">
-                    <img
-                      class="skill-svg"
-                      src="./icons/kibana.svg"
-                      alt="Kibana"
-                    />
-                  </div>
-                  <div class="section-skills_info" data-skill-percent="100">
-                    <div class="section-skills_progress-title"></div>
-                    <div class="section-skills_progress gradient-colors"></div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+									>
+								</div>
+							</div>
+							<h2 class="section-hero_links-title">Links</h2>
+							<ul class="social-list section-hero_social-list">
+								<li class="social-list_item">
+									<a
+										class="social-list_link"
+										target="_blank"
+										href="https://vk.com/b0nnerr"
+										tabindex="5"
+									>
+										<svg
+											class="vk-svg"
+											xmlns="http://www.w3.org/2000/svg"
+											width="100%"
+											height="100%"
+											viewBox="0 0 24 24"
+											role="img"
+										>
+											<title>VK icon</title>
+											<path
+												d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.391 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.254-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.744-.576.744z"
+											/>
+										</svg>
+									</a>
+								</li>
+								<li class="social-list_item">
+									<a
+										class="social-list_link"
+										target="_blank"
+										href="https://t.me/timmur_kom"
+										tabindex="6"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="100%"
+											height="100%"
+											viewBox="0 0 32 32"
+											version="1.1"
+										>
+											<title>telegram</title>
+											<path
+												d="M22.122 10.040c0.006-0 0.014-0 0.022-0 0.209 0 0.403 0.065 0.562 0.177l-0.003-0.002c0.116 0.101 0.194 0.243 0.213 0.403l0 0.003c0.020 0.122 0.031 0.262 0.031 0.405 0 0.065-0.002 0.129-0.007 0.193l0-0.009c-0.225 2.369-1.201 8.114-1.697 10.766-0.21 1.123-0.623 1.499-1.023 1.535-0.869 0.081-1.529-0.574-2.371-1.126-1.318-0.865-2.063-1.403-3.342-2.246-1.479-0.973-0.52-1.51 0.322-2.384 0.221-0.23 4.052-3.715 4.127-4.031 0.004-0.019 0.006-0.040 0.006-0.062 0-0.078-0.029-0.149-0.076-0.203l0 0c-0.052-0.034-0.117-0.053-0.185-0.053-0.045 0-0.088 0.009-0.128 0.024l0.002-0.001q-0.198 0.045-6.316 4.174c-0.445 0.351-1.007 0.573-1.619 0.599l-0.006 0c-0.867-0.105-1.654-0.298-2.401-0.573l0.074 0.024c-0.938-0.306-1.683-0.467-1.619-0.985q0.051-0.404 1.114-0.827 6.548-2.853 8.733-3.761c1.607-0.853 3.47-1.555 5.429-2.010l0.157-0.031zM15.93 1.025c-8.302 0.020-15.025 6.755-15.025 15.060 0 8.317 6.742 15.060 15.060 15.060s15.060-6.742 15.060-15.060c0-8.305-6.723-15.040-15.023-15.060h-0.002q-0.035-0-0.070 0z"
+											/>
+										</svg>
+									</a>
+								</li>
+								<li class="social-list_item">
+									<a
+										class="social-list_link"
+										target="_blank"
+										href="https://www.instagram.com/timmur.kom"
+										tabindex="7"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink"
+											width="100%"
+											height="100%"
+											version="1.1"
+											viewBox="0 0 48 48"
+											xml:space="preserve"
+										>
+											<style type="text/css">
+												.st0 {
+													fill: none;
+												}
+											</style>
+											<g>
+												<path
+													class="st0"
+													d="M0,0h48v48H0V0z"
+												/>
+												<path
+													d="M36,4H12c-4.4,0-8,3.6-8,8v24c0,4.4,3.6,8,8,8h24c4.4,0,8-3.6,8-8V12C44,7.6,40.4,4,36,4z M24,34c-5.5,0-10-4.5-10-10   s4.5-10,10-10s10,4.5,10,10S29.5,34,24,34z M35,15c-1.1,0-2-0.9-2-2c0-1.1,0.9-2,2-2s2,0.9,2,2C37,14.1,36.1,15,35,15z"
+												/>
+											</g>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section
+				id="section-skills"
+				class="section-skills section-skills__100vh"
+			>
+				<div class="container">
+					<h2 class="h2-title">Skills</h2>
+					<div class="section-skills__wrapper">
+						<div class="section-skills__left-side">
+							<ul class="section-skills_list">
+								<li class="section-skills_list-item">
+									<div class="section-skills_img-container">
+										<img
+											class="skill-svg"
+											src="./icons/js.svg"
+											alt="JS"
+										/>
+									</div>
+									<div
+										class="section-skills_info"
+										data-skill-percent="90"
+									>
+										<div
+											class="section-skills_progress-title"
+										></div>
+										<div
+											class="section-skills_progress gradient-colors"
+										></div>
+									</div>
+								</li>
+								<li class="section-skills_list-item">
+									<div class="section-skills_img-container">
+										<img
+											class="skill-svg"
+											src="./icons/html.svg"
+											alt="HTML5"
+										/>
+									</div>
+									<div
+										class="section-skills_info"
+										data-skill-percent="100"
+									>
+										<div
+											class="section-skills_progress-title"
+										></div>
+										<div
+											class="section-skills_progress gradient-colors"
+										></div>
+									</div>
+								</li>
+								<li class="section-skills_list-item">
+									<div class="section-skills_img-container">
+										<img
+											class="skill-svg"
+											src="./icons/css.svg"
+											alt="CSS3"
+										/>
+									</div>
+									<div
+										class="section-skills_info"
+										data-skill-percent="99"
+									>
+										<div
+											class="section-skills_progress-title"
+										></div>
+										<div
+											class="section-skills_progress gradient-colors"
+										></div>
+									</div>
+								</li>
+								<li class="section-skills_list-item">
+									<div class="section-skills_img-container">
+										<img
+											class="skill-svg"
+											src="./icons/nodejs.svg"
+											alt="Node.js"
+										/>
+									</div>
+									<div
+										class="section-skills_info"
+										data-skill-percent="90"
+									>
+										<div
+											class="section-skills_progress-title"
+										></div>
+										<div
+											class="section-skills_progress gradient-colors"
+										></div>
+									</div>
+								</li>
+								<li class="section-skills_list-item">
+									<div class="section-skills_img-container">
+										<img
+											class="skill-svg"
+											src="./icons/expressjs.svg"
+											alt="Express.js"
+										/>
+									</div>
+									<div
+										class="section-skills_info"
+										data-skill-percent="85"
+									>
+										<div
+											class="section-skills_progress-title"
+										></div>
+										<div
+											class="section-skills_progress gradient-colors"
+										></div>
+									</div>
+								</li>
+								<li class="section-skills_list-item">
+									<div class="section-skills_img-container">
+										<img
+											class="skill-svg"
+											src="./icons/postman.svg"
+											alt="Postman"
+										/>
+									</div>
+									<div
+										class="section-skills_info"
+										data-skill-percent="100"
+									>
+										<div
+											class="section-skills_progress-title"
+										></div>
+										<div
+											class="section-skills_progress gradient-colors"
+										></div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="section-skills__right-side">
+							<ul class="section-skills_list">
+								<li class="section-skills_list-item">
+									<div class="section-skills_img-container">
+										<img
+											class="skill-svg"
+											src="./icons/sass.svg"
+											alt="SASS"
+										/>
+									</div>
+									<div
+										class="section-skills_info"
+										data-skill-percent="80"
+									>
+										<div
+											class="section-skills_progress-title"
+										></div>
+										<div
+											class="section-skills_progress gradient-colors"
+										></div>
+									</div>
+								</li>
+								<li class="section-skills_list-item">
+									<div class="section-skills_img-container">
+										<img
+											class="skill-svg"
+											src="./icons/reactjs.svg"
+											alt="React.js"
+										/>
+									</div>
+									<div
+										class="section-skills_info"
+										data-skill-percent="99"
+									>
+										<div
+											class="section-skills_progress-title"
+										></div>
+										<div
+											class="section-skills_progress gradient-colors"
+										></div>
+									</div>
+								</li>
+								<li class="section-skills_list-item">
+									<div class="section-skills_img-container">
+										<img
+											class="skill-svg"
+											src="./icons/redux.svg"
+											alt="Redux"
+										/>
+									</div>
+									<div
+										class="section-skills_info"
+										data-skill-percent="90"
+									>
+										<div
+											class="section-skills_progress-title"
+										></div>
+										<div
+											class="section-skills_progress gradient-colors"
+										></div>
+									</div>
+								</li>
+								<li class="section-skills_list-item">
+									<div class="section-skills_img-container">
+										<img
+											class="skill-svg"
+											src="./icons/sql.svg"
+											alt="SQL"
+										/>
+									</div>
+									<div
+										class="section-skills_info"
+										data-skill-percent="100"
+									>
+										<div
+											class="section-skills_progress-title"
+										></div>
+										<div
+											class="section-skills_progress gradient-colors"
+										></div>
+									</div>
+								</li>
+								<li class="section-skills_list-item">
+									<div class="section-skills_img-container">
+										<img
+											class="skill-svg"
+											src="./icons/mongodb.svg"
+											alt="MongoDB"
+										/>
+									</div>
+									<div
+										class="section-skills_info"
+										data-skill-percent="90"
+									>
+										<div
+											class="section-skills_progress-title"
+										></div>
+										<div
+											class="section-skills_progress gradient-colors"
+										></div>
+									</div>
+								</li>
+								<li class="section-skills_list-item">
+									<div class="section-skills_img-container">
+										<img
+											class="skill-svg"
+											src="./icons/kibana.svg"
+											alt="Kibana"
+										/>
+									</div>
+									<div
+										class="section-skills_info"
+										data-skill-percent="100"
+									>
+										<div
+											class="section-skills_progress-title"
+										></div>
+										<div
+											class="section-skills_progress gradient-colors"
+										></div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
 
-      <section id="section-about" class="section-about section-about__100vh">
-        <div class="container">
-          <h2 class="h2-title">About Me</h2>
+			<section
+				id="section-about"
+				class="section-about section-about__100vh"
+			>
+				<div class="container">
+					<h2 class="h2-title">About Me</h2>
 
-          <div class="section-about_grid">
-            <div class="section-about_grid-item">
-              <span class="section-about_grid-number">1</span>
-              <p>I have been working as an analyst for almost 4 years</p>
-            </div>
-            <div class="section-about_grid-item">
-              <span class="section-about_grid-number">2</span>
-              <p>I really like to learn new technologies and tools</p>
-            </div>
-            <div class="section-about_grid-item">
-              <span class="section-about_grid-number">3</span>
-              <p>
-                Analyzed, designed, developed, tested, implemented and
-                maintained
-              </p>
-            </div>
-            <div class="section-about_grid-item">
-              <span class="section-about_grid-number">4</span>
-              <p>
-                Worked with:
-                <span class="section-about_grid-item__secondary-color"
-                  >Kibana/Sage, Charles, CI/CD, Docker, REST, SOAP</span
-                >
-              </p>
-            </div>
-            <div class="section-about_grid-item">
-              <span class="section-about_grid-number">5</span>
-              <p>I'm learning everything fast.</p>
-            </div>
-            <div class="section-about_grid-item">
-              <span class="section-about_grid-number">6</span>
-              <p>I want to work as a Fullstack QA Engineer</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+					<div class="section-about_grid">
+						<div class="section-about_grid-item">
+							<span class="section-about_grid-number">1</span>
+							<p>
+								I have been working as an analyst for almost 4
+								years
+							</p>
+						</div>
+						<div class="section-about_grid-item">
+							<span class="section-about_grid-number">2</span>
+							<p>
+								I really like to learn new technologies and
+								tools
+							</p>
+						</div>
+						<div class="section-about_grid-item">
+							<span class="section-about_grid-number">3</span>
+							<p>
+								Analyzed, designed, developed, tested,
+								implemented and maintained
+							</p>
+						</div>
+						<div class="section-about_grid-item">
+							<span class="section-about_grid-number">4</span>
+							<p>
+								Worked with:
+								<span
+									class="section-about_grid-item__secondary-color"
+									>Kibana/Sage, Charles, CI/CD, Docker, REST,
+									SOAP</span
+								>
+							</p>
+						</div>
+						<div class="section-about_grid-item">
+							<span class="section-about_grid-number">5</span>
+							<p>I'm learning everything fast.</p>
+						</div>
+						<div class="section-about_grid-item">
+							<span class="section-about_grid-number">6</span>
+							<p>I want to work as a Fullstack QA Engineer</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 
-    <footer class="footer">
-      <div class="container footer_container">
-        <h2 class="footer_title">Contacts:</h2>
-        <ul class="social-list">
-          <li class="social-list_item">
-            <a
-              class="social-list_link"
-              target="_blank"
-              href="https://vk.com/b0nnerr"
-              tabindex="5"
-            >
-              <svg
-                class="vk-svg"
-                xmlns="http://www.w3.org/2000/svg"
-                width="100%"
-                height="100%"
-                viewBox="0 0 24 24"
-                role="img"
-              >
-                <title>VK icon</title>
-                <path
-                  d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.391 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.254-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.744-.576.744z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li class="social-list_item">
-            <a
-              class="social-list_link"
-              target="_blank"
-              href="https://t.me/timmur_kom"
-              tabindex="6"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="100%"
-                height="100%"
-                viewBox="0 0 32 32"
-                version="1.1"
-              >
-                <title>telegram</title>
-                <path
-                  d="M22.122 10.040c0.006-0 0.014-0 0.022-0 0.209 0 0.403 0.065 0.562 0.177l-0.003-0.002c0.116 0.101 0.194 0.243 0.213 0.403l0 0.003c0.020 0.122 0.031 0.262 0.031 0.405 0 0.065-0.002 0.129-0.007 0.193l0-0.009c-0.225 2.369-1.201 8.114-1.697 10.766-0.21 1.123-0.623 1.499-1.023 1.535-0.869 0.081-1.529-0.574-2.371-1.126-1.318-0.865-2.063-1.403-3.342-2.246-1.479-0.973-0.52-1.51 0.322-2.384 0.221-0.23 4.052-3.715 4.127-4.031 0.004-0.019 0.006-0.040 0.006-0.062 0-0.078-0.029-0.149-0.076-0.203l0 0c-0.052-0.034-0.117-0.053-0.185-0.053-0.045 0-0.088 0.009-0.128 0.024l0.002-0.001q-0.198 0.045-6.316 4.174c-0.445 0.351-1.007 0.573-1.619 0.599l-0.006 0c-0.867-0.105-1.654-0.298-2.401-0.573l0.074 0.024c-0.938-0.306-1.683-0.467-1.619-0.985q0.051-0.404 1.114-0.827 6.548-2.853 8.733-3.761c1.607-0.853 3.47-1.555 5.429-2.010l0.157-0.031zM15.93 1.025c-8.302 0.020-15.025 6.755-15.025 15.060 0 8.317 6.742 15.060 15.060 15.060s15.060-6.742 15.060-15.060c0-8.305-6.723-15.040-15.023-15.060h-0.002q-0.035-0-0.070 0z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li class="social-list_item">
-            <a
-              class="social-list_link"
-              target="_blank"
-              href="https://www.instagram.com/timmur.kom"
-              tabindex="7"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="100%"
-                height="100%"
-                version="1.1"
-                viewBox="0 0 48 48"
-                xml:space="preserve"
-              >
-                <style type="text/css">
-                  .st0 {
-                    fill: none;
-                  }
-                </style>
-                <g>
-                  <path class="st0" d="M0,0h48v48H0V0z" />
-                  <path
-                    d="M36,4H12c-4.4,0-8,3.6-8,8v24c0,4.4,3.6,8,8,8h24c4.4,0,8-3.6,8-8V12C44,7.6,40.4,4,36,4z M24,34c-5.5,0-10-4.5-10-10   s4.5-10,10-10s10,4.5,10,10S29.5,34,24,34z M35,15c-1.1,0-2-0.9-2-2c0-1.1,0.9-2,2-2s2,0.9,2,2C37,14.1,36.1,15,35,15z"
-                  />
-                </g>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </body>
+		<footer class="footer">
+			<div class="container footer_container">
+				<h2 class="footer_title">Contacts:</h2>
+				<ul class="social-list">
+					<li class="social-list_item">
+						<a
+							class="social-list_link"
+							target="_blank"
+							href="https://vk.com/b0nnerr"
+							tabindex="5"
+						>
+							<svg
+								class="vk-svg"
+								xmlns="http://www.w3.org/2000/svg"
+								width="100%"
+								height="100%"
+								viewBox="0 0 24 24"
+								role="img"
+							>
+								<title>VK icon</title>
+								<path
+									d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.391 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.254-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.744-.576.744z"
+								/>
+							</svg>
+						</a>
+					</li>
+					<li class="social-list_item">
+						<a
+							class="social-list_link"
+							target="_blank"
+							href="https://t.me/timmur_kom"
+							tabindex="6"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="100%"
+								height="100%"
+								viewBox="0 0 32 32"
+								version="1.1"
+							>
+								<title>telegram</title>
+								<path
+									d="M22.122 10.040c0.006-0 0.014-0 0.022-0 0.209 0 0.403 0.065 0.562 0.177l-0.003-0.002c0.116 0.101 0.194 0.243 0.213 0.403l0 0.003c0.020 0.122 0.031 0.262 0.031 0.405 0 0.065-0.002 0.129-0.007 0.193l0-0.009c-0.225 2.369-1.201 8.114-1.697 10.766-0.21 1.123-0.623 1.499-1.023 1.535-0.869 0.081-1.529-0.574-2.371-1.126-1.318-0.865-2.063-1.403-3.342-2.246-1.479-0.973-0.52-1.51 0.322-2.384 0.221-0.23 4.052-3.715 4.127-4.031 0.004-0.019 0.006-0.040 0.006-0.062 0-0.078-0.029-0.149-0.076-0.203l0 0c-0.052-0.034-0.117-0.053-0.185-0.053-0.045 0-0.088 0.009-0.128 0.024l0.002-0.001q-0.198 0.045-6.316 4.174c-0.445 0.351-1.007 0.573-1.619 0.599l-0.006 0c-0.867-0.105-1.654-0.298-2.401-0.573l0.074 0.024c-0.938-0.306-1.683-0.467-1.619-0.985q0.051-0.404 1.114-0.827 6.548-2.853 8.733-3.761c1.607-0.853 3.47-1.555 5.429-2.010l0.157-0.031zM15.93 1.025c-8.302 0.020-15.025 6.755-15.025 15.060 0 8.317 6.742 15.060 15.060 15.060s15.060-6.742 15.060-15.060c0-8.305-6.723-15.040-15.023-15.060h-0.002q-0.035-0-0.070 0z"
+								/>
+							</svg>
+						</a>
+					</li>
+					<li class="social-list_item">
+						<a
+							class="social-list_link"
+							target="_blank"
+							href="https://www.instagram.com/timmur.kom"
+							tabindex="7"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink"
+								width="100%"
+								height="100%"
+								version="1.1"
+								viewBox="0 0 48 48"
+								xml:space="preserve"
+							>
+								<style type="text/css">
+									.st0 {
+										fill: none;
+									}
+								</style>
+								<g>
+									<path class="st0" d="M0,0h48v48H0V0z" />
+									<path
+										d="M36,4H12c-4.4,0-8,3.6-8,8v24c0,4.4,3.6,8,8,8h24c4.4,0,8-3.6,8-8V12C44,7.6,40.4,4,36,4z M24,34c-5.5,0-10-4.5-10-10   s4.5-10,10-10s10,4.5,10,10S29.5,34,24,34z M35,15c-1.1,0-2-0.9-2-2c0-1.1,0.9-2,2-2s2,0.9,2,2C37,14.1,36.1,15,35,15z"
+									/>
+								</g>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+		<script type="module" src="./scripts/index.js"></script>
+	</body>
 </html>
